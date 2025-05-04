@@ -1,58 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  
-    <title>Matérias</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - História</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
- <body>
-  <nav>
-    <ul>
-        <li><a href="index2.html">Biologia</a></li>
-        <li><a href="index3.html">Matématica</a></li>
-        <li><a href="index.html">Química</a></li>
-        
-    </ul>
-</nav>
+<body>
   <header>
-    <h1>Química</h1>
-    <div class="search-bar">
-        <input type="text" placeholder="Pesquisar...">
-        <spans class="material-icons">search</span>
+    <div class="menu">
+      <button class="menu-button" onclick="toggleMenu()">
+        <span class="material-icons">menu</span>
+      </button>
+      <ul class="menu-list" id="menu-list">
+        <li><a href="index.html">Matemática</a></li>
+        <li><a href="indexP.html">Português</a></li>
+        <li><a href="indexH.html">História</a></li>
+        <li><a href="indexC.html">Ciências</a></li>
+      </ul>
     </div>
-    </header>
-<h2>
-  Portifolio de Química
-</h2><script>
-    function toggleMenu() {
-        var menu = document.getElementById("menu-list");
-        menu.style.display = menu.style.display === "block" ? "none" : "block";
-    }
-</script>
-  <section class="onion">
-  <p>
-    Sustentabilidade é a capacidade de uso consciente dos recursos naturais sem comprometer o bem-estar das gerações futuras. Seu objetivo principal é encontrar o equilíbrio entre o desenvolvimento econômico e a preservação ambiental.
-  </p>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar..."/>
+      <span class="material-icons">search</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#atividades">Atividades</a></li>
+        <li><a href="#provas">Provas</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="titulo">
+    <div class="Portfólio"><h1>Portfólio</h1></div>
+    <div class="materias"><h2>História</h2></div>
   </section>
-  <section class="carrot">
-    <img class="Tap" src="image copy 4.png" alt="tap">
-  </section> 
-<section class="potato">
-  <P>
-  A sustentabilidade no meio agrícola é um campo dinâmico que busca equilibrar a produção de alimentos com a conservação dos recursos naturais e o bem-estar das comunidades rurais. Isso implica não apenas adotar práticas que minimizem o impacto ambiental, como o uso eficiente da água e a conservação do solo, mas também promover sistemas agrícolas que sejam resilientes e adaptáveis ​​às mudanças climáticas. A diversificação de culturas, por exemplo, não apenas melhora a saúde do solo, mas também reduz o risco de perdas devido a condições climáticas adversas, beneficiando a segurança alimentar e a estabilidade econômica das áreas rurais.
 
-Além disso, a sustentabilidade agrícola também se concentra em promover práticas que respeitem os ecossistemas locais e promovam a biodiversidade. Isso inclui a criação de habitats para polinizadores naturais, como abelhas e borboletas, que desempenham um papel crucial na produção de alimentos. Ao integrar práticas agroecológicas e técnicas de manejo integrado de pragas, os agricultores podem reduzir a dependência de pesticidas sintéticos, promovendo assim a saúde ambiental e a qualidade dos alimentos produzidos. Esses esforços não apenas protegem o meio ambiente, mas também contribuem para a criação de sistemas agrícolas mais resilientes e sustentáveis a longo prazo.
-</P>
-</section>
+  <section id="atividades">
+    <div class="blocao">
+      <h2>Atividades</h2>
+      <ul>
+        <li>Leitura e análise de textos históricos</li>
+        <li>Criação de linha do tempo dos períodos históricos</li>
+        <li>Estudo de civilizações antigas</li>
+      </ul>
+    </div>
+  </section>
 
-<footer>
-  <a class="gradient" href=https://www.greenpeace.org/brasil/>Ajude o Brasil a ter um futuro mais sustentavel</a>
-</footer>
- </body>
+  <section id="provas">
+    <div class="blocao">
+      <h2>Provas</h2>
+      <ul>
+        <li>Prova sobre Idade Média</li>
+        <li>Análise de mapas históricos</li>
+        <li>Redação sobre colonização</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="blocao">
+      <h2>Projetos</h2>
+      <ul>
+        <li>Museu virtual de temas históricos</li>
+        <li>Apresentação sobre a Revolução Francesa</li>
+        <li>Trabalho sobre a cultura indígena</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Gabriel Rodrigues e Rafael</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu-list");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
 </html>
